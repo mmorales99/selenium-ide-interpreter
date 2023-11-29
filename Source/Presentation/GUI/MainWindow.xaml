@@ -1,0 +1,31 @@
+﻿<Window x:Class="GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="GUI - SIDE Interpreter - Development" Height="371" Width="800">
+    <StackPanel Margin="13,10,0,10" HorizontalAlignment="Left" Width="775">
+        <StackPanel Orientation="Horizontal" Height="30">
+            <Label Content="URL TO WEBPAGE FOR TESTING IN: " HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBox Text="https://www.example.com" VerticalAlignment="Center" Width="566" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="URL TO SELENIUM TESTS DEFINITIONS: " VerticalAlignment="Center" />
+            <TextBox Text="\\TestingServer\d$\Front\Tests" VerticalAlignment="Center" Width="546" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="WAITING SECONDS BETEEWN COMMANDS: " VerticalAlignment="Center" />
+            <TextBox Text="0" VerticalAlignment="Center" Width="31" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="SHOW BROWSER: " VerticalAlignment="Center" />
+            <CheckBox VerticalAlignment="Center" />
+        </StackPanel>
+        <StackPanel Height="221">
+            <Label Content="BROSWER TO TEST IN: " VerticalAlignment="Center" />
+            <ListBox />
+        </StackPanel>
+    </StackPanel>
+</Window>

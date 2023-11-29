@@ -1,0 +1,1295 @@
+{
+  "id": "1ceef30f-5af5-40b2-953d-8b976c5af0f4",
+  "version": "2.0",
+  "name": "SIT NET6",
+  "url": "https://localhost:44341/",
+  "tests": [
+    {
+      "id": "d99cbdb0-94e8-4fa0-a409-e7c6ffbf479f",
+      "name": "Login",
+      "commands": [
+        {
+          "id": "fdf5a4fe-9050-4cdc-b759-f9a0a908453b",
+          "comment": "",
+          "command": "open",
+          "target": "https://localhost:44341/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "077d95fb-8bb9-4bf5-8afb-a40cc8427974",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1246x688",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "36355755-701a-4755-ad4e-f75ade648b05",
+          "comment": "",
+          "command": "type",
+          "target": "name=Usuario",
+          "targets": [
+            [ "name=Usuario", "name" ],
+            [ "css=.width-330px:nth-child(1)", "css:finder" ],
+            [ "xpath=//input[@name='Usuario']", "xpath:attributes" ],
+            [ "xpath=//div[@id='login-form']/form/div/input", "xpath:idRelative" ],
+            [ "xpath=//input", "xpath:position" ]
+          ],
+          "value": "mjmorales"
+        },
+        {
+          "id": "ab345715-09ac-4036-9d02-ae3870e5833f",
+          "comment": "",
+          "command": "click",
+          "target": "name=Password",
+          "targets": [
+            [ "name=Password", "name" ],
+            [ "css=.width-330px:nth-child(7)", "css:finder" ],
+            [ "xpath=//input[@name='Password']", "xpath:attributes" ],
+            [ "xpath=//div[@id='login-form']/form/div/input[7]", "xpath:idRelative" ],
+            [ "xpath=//input[7]", "xpath:position" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "9e084ac5-9fad-4d9d-8193-fed79339b766",
+          "comment": "",
+          "command": "type",
+          "target": "name=Password",
+          "targets": [
+            [ "name=Password", "name" ],
+            [ "css=.width-330px:nth-child(7)", "css:finder" ],
+            [ "xpath=//input[@name='Password']", "xpath:attributes" ],
+            [ "xpath=//div[@id='login-form']/form/div/input[7]", "xpath:idRelative" ],
+            [ "xpath=//input[7]", "xpath:position" ]
+          ],
+          "value": "mjm0r4l3sGTT8"
+        },
+        {
+          "id": "cd43785d-62cc-459d-910f-6a59e9ea5184",
+          "comment": "",
+          "command": "click",
+          "target": "id=btnEntrar",
+          "targets": [
+            [ "id=btnEntrar", "id" ],
+            [ "css=#btnEntrar", "css:finder" ],
+            [ "xpath=//button[@id='btnEntrar']", "xpath:attributes" ],
+            [ "xpath=//div[@id='login-form']/form/div[2]/button", "xpath:idRelative" ],
+            [ "xpath=//div[2]/button", "xpath:position" ],
+            [ "xpath=//button[contains(.,'Entrar')]", "xpath:innerText" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "f549bedc-de7a-46a6-97f1-f82c9e1f7d15",
+          "comment": "",
+          "command": "click",
+          "target": "id=home",
+          "targets": [
+            [ "id=home", "id" ],
+            [ "css=#home", "css:finder" ],
+            [ "xpath=//body[@id='home']", "xpath:attributes" ],
+            [ "xpath=//body", "xpath:position" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "e12fd0f3-82b1-4b53-8ea4-f70915623469",
+          "comment": "",
+          "command": "click",
+          "target": "css=#ORGA > span",
+          "targets": [
+            [ "css=#ORGA > span", "css:finder" ],
+            [ "xpath=//a[@id='ORGA']/span", "xpath:idRelative" ],
+            [ "xpath=//span", "xpath:position" ],
+            [ "xpath=//span[contains(.,'Organización')]", "xpath:innerText" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "874888be-304b-4157-b67d-184ad8b365a2",
+          "comment": "",
+          "command": "click",
+          "target": "id=testHERRGdocs",
+          "targets": [
+            [ "id=testHERRGdocs", "id" ],
+            [ "linkText=Gestor de plantillas", "linkText" ],
+            [ "css=#testHERRGdocs", "css:finder" ],
+            [ "xpath=//a[contains(text(),'Gestor de plantillas')]", "xpath:link" ],
+            [ "xpath=//a[@id='testHERRGdocs']", "xpath:attributes" ],
+            [ "xpath=//div[@id='Col1']/div[7]/a[2]", "xpath:idRelative" ],
+            [ "xpath=(//a[contains(@href, '#')])[30]", "xpath:href" ],
+            [ "xpath=//div[7]/a[2]", "xpath:position" ],
+            [ "xpath=//a[contains(.,'Gestor de plantillas')]", "xpath:innerText" ]
+          ],
+          "value": "",
+          "opensWindow": true,
+          "windowHandleName": "win786",
+          "windowTimeout": 2000
+        },
+        {
+          "id": "688e1c09-44b4-4210-a38b-8b9a89831dc3",
+          "comment": "",
+          "command": "storeWindowHandle",
+          "target": "root",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d8220dd6-8443-47eb-b6b2-41b3d7b428fb",
+          "comment": "",
+          "command": "selectWindow",
+          "target": "handle=${win786}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "50fe0668-23c7-4ef3-9bd2-563e2cb44ab1",
+          "comment": "",
+          "command": "selectWindow",
+          "target": "handle=${root}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f461bccd-4461-418e-86cb-c97bc4c217b2",
+          "comment": "",
+          "command": "click",
+          "target": "id=home",
+          "targets": [
+            [ "id=home", "id" ],
+            [ "css=#home", "css:finder" ],
+            [ "xpath=//body[@id='home']", "xpath:attributes" ],
+            [ "xpath=//body", "xpath:position" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "6f998bd3-bb24-44e0-949d-c351e460f5ab",
+          "comment": "",
+          "command": "click",
+          "target": "id=testCONFLOGS",
+          "targets": [
+            [ "id=testCONFLOGS", "id" ],
+            [ "linkText=Logs", "linkText" ],
+            [ "css=#testCONFLOGS", "css:finder" ],
+            [ "xpath=//a[contains(text(),'Logs')]", "xpath:link" ],
+            [ "xpath=//a[@id='testCONFLOGS']", "xpath:attributes" ],
+            [ "xpath=//div[@id='Col1']/div[4]/a[2]", "xpath:idRelative" ],
+            [ "xpath=(//a[contains(@href, '#')])[28]", "xpath:href" ],
+            [ "xpath=//div[4]/a[2]", "xpath:position" ],
+            [ "xpath=//a[contains(.,'Logs')]", "xpath:innerText" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "4a470810-42b7-4efe-95fb-d3e6a898b40c",
+          "comment": "",
+          "command": "click",
+          "target": "id=tabFicheros",
+          "targets": [
+            [ "id=tabFicheros", "id" ],
+            [ "linkText=Fichero", "linkText" ],
+            [ "name=tabFichero", "name" ],
+            [ "css=#tabFicheros", "css:finder" ],
+            [ "xpath=//a[contains(text(),'Fichero')]", "xpath:link" ],
+            [ "xpath=//a[@id='tabFicheros']", "xpath:attributes" ],
+            [ "xpath=//div[@id='Tabs']/div/ul/li[5]/a", "xpath:idRelative" ],
+            [ "xpath=//a[contains(@href, '#Ficheros')]", "xpath:href" ],
+            [ "xpath=//form/div[2]/div/ul/li[5]/a", "xpath:position" ],
+            [ "xpath=//a[contains(.,'Fichero')]", "xpath:innerText" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "c6bf9711-8863-4a05-95c9-094a19a5f35a",
+          "comment": "",
+          "command": "click",
+          "target": "css=#ORGA > span",
+          "targets": [
+            [ "css=#ORGA > span", "css:finder" ],
+            [ "xpath=//a[@id='ORGA']/span", "xpath:idRelative" ],
+            [ "xpath=//span", "xpath:position" ],
+            [ "xpath=//span[contains(.,'Organización')]", "xpath:innerText" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "abef7d62-424d-43a7-83e3-aba015ccb379",
+          "comment": "",
+          "command": "mouseOver",
+          "target": "css=#ORGA > span",
+          "targets": [
+            [ "css=#ORGA > span", "css:finder" ],
+            [ "xpath=//a[@id='ORGA']/span", "xpath:idRelative" ],
+            [ "xpath=//span", "xpath:position" ],
+            [ "xpath=//span[contains(.,'Organización')]", "xpath:innerText" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "c2976668-7d67-4953-b873-942a0a7ca47e",
+          "comment": "",
+          "command": "click",
+          "target": "id=testHERRProc",
+          "targets": [
+            [ "id=testHERRProc", "id" ],
+            [ "linkText=Ficheros", "linkText" ],
+            [ "css=#testHERRProc", "css:finder" ],
+            [ "xpath=//a[contains(text(),'Ficheros')]", "xpath:link" ],
+            [ "xpath=//a[@id='testHERRProc']", "xpath:attributes" ],
+            [ "xpath=//div[@id='Col1']/div[10]/a[2]", "xpath:idRelative" ],
+            [ "xpath=(//a[contains(@href, '#')])[33]", "xpath:href" ],
+            [ "xpath=//div[10]/a[2]", "xpath:position" ],
+            [ "xpath=//a[contains(.,'Ficheros')]", "xpath:innerText" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "cc77e8da-57cf-4a35-8b3e-e49d5deb5137",
+          "comment": "",
+          "command": "click",
+          "target": "css=.icon-chevron-down",
+          "targets": [
+            [ "css=.icon-chevron-down", "css:finder" ],
+            [ "xpath=//div[@id='Importador']/div/div/div/div/span/i", "xpath:idRelative" ],
+            [ "xpath=//span/i", "xpath:position" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "54b944e0-6e24-4cf6-ba4f-1bca8be411af",
+          "comment": "",
+          "command": "mouseDown",
+          "target": "css=.active:nth-child(2) > a",
+          "targets": [
+            [ "css=.active:nth-child(2) > a", "css:finder" ],
+            [ "xpath=//a[contains(text(),'Descarga')]", "xpath:link" ],
+            [ "xpath=//div[@id='Procesosafb81401-6cc3-4a4a-a31a-dfb570462e84']/ul/li[2]/a", "xpath:idRelative" ],
+            [ "xpath=(//a[contains(@href, '#')])[39]", "xpath:href" ],
+            [ "xpath=//div[4]/ul/li[2]/a", "xpath:position" ],
+            [ "xpath=//a[contains(.,'Descarga')]", "xpath:innerText" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "fb80a2ff-5268-421f-973e-0d37494bde15",
+          "comment": "",
+          "command": "mouseUp",
+          "target": "css=.submits .block",
+          "targets": [
+            [ "css=.submits .block", "css:finder" ],
+            [ "xpath=//div[@id='Importador']/div[2]/div/div", "xpath:idRelative" ],
+            [ "xpath=//div[2]/div/div[2]/div/div", "xpath:position" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "10ed6e05-2415-48f6-8693-a1e3b5000a33",
+          "comment": "",
+          "command": "click",
+          "target": "id=Procesosafb81401-6cc3-4a4a-a31a-dfb570462e84",
+          "targets": [
+            [ "id=Procesosafb81401-6cc3-4a4a-a31a-dfb570462e84", "id" ],
+            [ "css=#Procesosafb81401-6cc3-4a4a-a31a-dfb570462e84", "css:finder" ],
+            [ "xpath=//div[@id='Procesosafb81401-6cc3-4a4a-a31a-dfb570462e84']", "xpath:attributes" ],
+            [ "xpath=//div[@id='body']/div[4]", "xpath:idRelative" ],
+            [ "xpath=//div[5]/div[4]", "xpath:position" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "28683167-05b6-4ca3-abed-2156a5543661",
+          "comment": "",
+          "command": "click",
+          "target": "id=BtImportador",
+          "targets": [
+            [ "id=BtImportador", "id" ],
+            [ "css=#BtImportador", "css:finder" ],
+            [ "xpath=//button[@id='BtImportador']", "xpath:attributes" ],
+            [ "xpath=//div[@id='Importador']/div[2]/div/div/button", "xpath:idRelative" ],
+            [ "xpath=//button", "xpath:position" ],
+            [ "xpath=//button[contains(.,'Continuar')]", "xpath:innerText" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "c154770d-24f5-4858-b37c-6a4cf98e1c06",
+          "comment": "",
+          "command": "click",
+          "target": "css=#imgFechaDesde > .icon",
+          "targets": [
+            [ "css=#imgFechaDesde > .icon", "css:finder" ],
+            [ "xpath=//span[@id='imgFechaDesde']/i", "xpath:idRelative" ],
+            [ "xpath=//form/div[2]/div/div/div/div/div/span/i", "xpath:position" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "1f203e08-fa2c-4e09-bd9d-2cdcabca9ba8",
+          "comment": "",
+          "command": "click",
+          "target": "css=.ui-corner-left .ui-datepicker-month",
+          "targets": [
+            [ "css=.ui-corner-left .ui-datepicker-month", "css:finder" ],
+            [ "xpath=//div[@id='ui-datepicker-div']/div/div/div/select", "xpath:idRelative" ],
+            [ "xpath=//div[8]/div/div/div/select", "xpath:position" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "9f82df09-0729-4e77-a407-db89735f2979",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=6",
+          "targets": [
+            [ "linkText=6", "linkText" ],
+            [ "css=.ui-state-hover", "css:finder" ],
+            [ "xpath=//a[contains(text(),'6')]", "xpath:link" ],
+            [ "xpath=//div[@id='ui-datepicker-div']/div/table/tbody/tr[2]/td/a", "xpath:idRelative" ],
+            [ "xpath=(//a[contains(@href, '#')])[45]", "xpath:href" ],
+            [ "xpath=//tr[2]/td/a", "xpath:position" ],
+            [ "xpath=//a[contains(.,'6')]", "xpath:innerText" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "5cd28bde-a7dd-478f-aa0f-37b933dd741c",
+          "comment": "",
+          "command": "click",
+          "target": "id=buttonBuscar",
+          "targets": [
+            [ "id=buttonBuscar", "id" ],
+            [ "css=#buttonBuscar", "css:finder" ],
+            [ "xpath=//button[@id='buttonBuscar']", "xpath:attributes" ],
+            [ "xpath=//div[@id='buscFichero']/div/div[2]/div[2]/button", "xpath:idRelative" ],
+            [ "xpath=//div[2]/button", "xpath:position" ],
+            [ "xpath=//button[contains(.,'Buscar')]", "xpath:innerText" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "a1e926c2-341f-4249-8d8c-902fe8486c8b",
+          "comment": "",
+          "command": "click",
+          "target": "css=#RegDatosImportador\\[RegDatosImportador\\#1\\#1\\]\\.detDescarga > .icon",
+          "targets": [
+            [ "css=#RegDatosImportador\\[RegDatosImportador\\#1\\#1\\]\\.detDescarga > .icon", "css:finder" ],
+            [ "xpath=//a[@id='RegDatosImportador[RegDatosImportador#1#1].detDescarga']/i", "xpath:idRelative" ],
+            [ "xpath=//td[5]/div/a/i", "xpath:position" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "05c9a691-5d84-4a87-8ed9-e033c2f53106",
+          "comment": "",
+          "command": "click",
+          "target": "name=checkall",
+          "targets": [
+            [ "name=checkall", "name" ],
+            [ "xpath=//input[@name='checkall']", "xpath:attributes" ],
+            [ "xpath=//thead[@id='flCab']/tr[2]/th/div/input", "xpath:idRelative" ],
+            [ "xpath=//th/div/input", "xpath:position" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "450c0636-9709-4928-8f9d-781fae29bbda",
+          "comment": "",
+          "command": "click",
+          "target": "name=checkall",
+          "targets": [
+            [ "name=checkall", "name" ],
+            [ "xpath=//input[@name='checkall']", "xpath:attributes" ],
+            [ "xpath=//thead[@id='flCab']/tr[2]/th/div/input", "xpath:idRelative" ],
+            [ "xpath=//th/div/input", "xpath:position" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "0ec515d9-3b47-49a7-9224-5a5c240589d9",
+          "comment": "",
+          "command": "click",
+          "target": "name=check",
+          "targets": [
+            [ "name=check", "name" ],
+            [ "css=#RegDatosImportador\\#1\\#1 .input-check", "css:finder" ],
+            [ "xpath=//input[@name='check']", "xpath:attributes" ],
+            [ "xpath=//tr[@id='RegDatosImportador#1#1']/td/div/div/input", "xpath:idRelative" ],
+            [ "xpath=//td/div/div/input", "xpath:position" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "1002b844-c179-4516-9c6b-9b7648b4c428",
+          "comment": "",
+          "command": "click",
+          "target": "css=#RegDatosImportador\\#1\\#2 .input-check",
+          "targets": [
+            [ "css=#RegDatosImportador\\#1\\#2 .input-check", "css:finder" ],
+            [ "xpath=(//input[@name='check'])[2]", "xpath:attributes" ],
+            [ "xpath=//tr[@id='RegDatosImportador#1#2']/td/div/div/input", "xpath:idRelative" ],
+            [ "xpath=//tr[2]/td/div/div/input", "xpath:position" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "990e213e-c60f-4d1d-9540-24ab5433f3e1",
+          "comment": "",
+          "command": "click",
+          "target": "css=#RegDatosImportadorseleccionados > .btn",
+          "targets": [
+            [ "css=#RegDatosImportadorseleccionados > .btn", "css:finder" ],
+            [ "xpath=//a[@id='RegDatosImportadorseleccionados']/span", "xpath:idRelative" ],
+            [ "xpath=//div[3]/a/span", "xpath:position" ],
+            [ "xpath=//span[contains(.,' Ver seleccionados y operar')]", "xpath:innerText" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d384b063-4459-4af8-b37d-12893f3efb17",
+          "comment": "",
+          "command": "click",
+          "target": "id=RegDatosImportadorbtn-operar-span",
+          "targets": [
+            [ "id=RegDatosImportadorbtn-operar-span", "id" ],
+            [ "css=#RegDatosImportadorbtn-operar-span", "css:finder" ],
+            [ "xpath=//span[@id='RegDatosImportadorbtn-operar-span']", "xpath:attributes" ],
+            [ "xpath=//button[@id='btn-operar']/span", "xpath:idRelative" ],
+            [ "xpath=//button/span", "xpath:position" ],
+            [ "xpath=//span[contains(.,'Descargar elementos seleccionados')]", "xpath:innerText" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "523921a1-1b9d-459a-97a5-b02fbd8bed90",
+          "comment": "",
+          "command": "click",
+          "target": "id=home",
+          "targets": [
+            [ "id=home", "id" ],
+            [ "css=#home", "css:finder" ],
+            [ "xpath=//body[@id='home']", "xpath:attributes" ],
+            [ "xpath=//body", "xpath:position" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "a8e87940-cb19-4c96-806a-b758dfcfa336",
+          "comment": "",
+          "command": "click",
+          "target": "css=#ORGA > span",
+          "targets": [
+            [ "css=#ORGA > span", "css:finder" ],
+            [ "xpath=//a[@id='ORGA']/span", "xpath:idRelative" ],
+            [ "xpath=//span", "xpath:position" ],
+            [ "xpath=//span[contains(.,'Organización')]", "xpath:innerText" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "1807fd64-db51-4e19-98b4-00ac3378d622",
+          "comment": "",
+          "command": "click",
+          "target": "css=.header-username--title",
+          "targets": [
+            [ "css=.header-username--title", "css:finder" ],
+            [ "xpath=//div[@id='header-user-job']/a/p", "xpath:idRelative" ],
+            [ "xpath=//p", "xpath:position" ],
+            [ "xpath=//p[contains(.,'GTT')]", "xpath:innerText" ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "4881c9ac-5e93-4304-9f86-7de1fb4d48bf",
+          "comment": "",
+          "command": "type",
+          "target": "name=autoNBuscadorGeneralInstant",
+          "targets": [
+            [ "name=autoNBuscadorGeneralInstant", "name" ],
+            [ "css=.bg-input-wrapper:nth-child(2) > .ui-input__input", "css:finder" ],
+            [ "xpath=//input[@name='autoNBuscadorGeneralInstant']", "xpath:attributes" ],
+            [ "xpath=//div[@id='bBuscadorGeneral']/div/div/div[2]/input", "xpath:idRelative" ],
+            [ "xpath=//div[2]/input", "xpath:position" ]
+          ],
+          "value": "aa"
+        },
+        {
+          "id": "8ee10cc6-3df8-4587-9f90-4f22dc0d6fec",
+          "comment": "",
+          "command": "mouseUp",
+          "target": "css=.working",
+          "targets": [
+            [ "css=.working", "css:finder" ],
+            [ "xpath=//html/div", "xpath:position" ],
+            [ "xpath=//div[contains(.,'Espere por favor...')]", "xpath:innerText" ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "74f91a0c-402f-4eb2-b0a9-c16ef28e81bd",
+      "name": "pruebas",
+      "commands": [
+        {
+          "id": "4a5980e3-75a7-4d29-a73e-eb57094b9cab",
+          "comment": "",
+          "command": "addSelection",
+          "target": "css=h2:nth-child(1) > code",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "63c514d1-a957-4f58-9899-02387c80d0fc",
+          "comment": "",
+          "command": "answerOnNextPrompt",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e95e0eae-b93a-47e0-b2bd-692d342449fb",
+          "comment": "",
+          "command": "removeSelection",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f769f8cc-50cc-4c6f-be24-93e628c44bd2",
+          "comment": "",
+          "command": "chooseCancelOnNextPrompt",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "95ebfacd-4501-4a26-b9fb-5fd1a20c36e4",
+          "comment": "",
+          "command": "assert",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4743901e-7f5b-4386-b765-34eadd943434",
+          "comment": "",
+          "command": "assertAlert",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "79b2c4b6-1c7a-4328-87e8-06214a01f7af",
+          "comment": "",
+          "command": "assertChecked",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "80f4e4c7-512e-47bb-8d95-4fddbd71064a",
+          "comment": "",
+          "command": "assertConfirmation",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a112d2a4-f0f9-4e93-84ad-bd16b3af99da",
+          "comment": "",
+          "command": "assertEditable",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2daac0ce-4646-406b-8c79-4741f1ddb539",
+          "comment": "",
+          "command": "assertElementPresent",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "27827505-5a0e-4833-a711-3c6722bc330c",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a23a7b86-35ea-428b-89d7-2ca2dd5db555",
+          "comment": "",
+          "command": "assertNotChecked",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "01a6e680-df1f-4b72-a781-024121fe091d",
+          "comment": "",
+          "command": "assertNotEditable",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "de5f6f8d-415c-4c89-9c96-eb9827f2b197",
+          "comment": "",
+          "command": "assertNotSelectedValue",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "619af8b8-5168-4bf2-97b0-6f95556cfdc4",
+          "comment": "",
+          "command": "assertNotText",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3a0f2778-b35f-49b6-bc99-75240a1b62e5",
+          "comment": "",
+          "command": "assertPrompt",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d14d811e-895f-4229-954f-3d4c8718ed5a",
+          "comment": "",
+          "command": "assertSelectedValue",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5bba3689-cc9d-4ed3-9e0d-7b8a9fc68cfe",
+          "comment": "",
+          "command": "assertSelectedLabel",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b97014d3-740d-41e2-a8bd-0595ce059269",
+          "comment": "",
+          "command": "assertText",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "97294eb7-c52a-439a-8285-a0c2e3a3389c",
+          "comment": "",
+          "command": "assertTitle",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6bee757d-4149-4118-8a5f-1e5947370216",
+          "comment": "",
+          "command": "assertValue",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "27ad76fe-e619-4b25-80c7-c4968b2846a9",
+          "comment": "",
+          "command": "check",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "017c0984-a490-483a-8141-9b3d5a5e6fda",
+          "comment": "",
+          "command": "chooseCancelOnNextConfirmation",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "235b982f-aac6-4082-ba02-9eaf373e3d38",
+          "comment": "",
+          "command": "chooseOkOnNextConfirmation",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "82d0046b-a434-4a61-8456-020a973b4b2a",
+          "comment": "",
+          "command": "click",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "95ccc09b-9d2e-4779-9035-dcd671c99cce",
+          "comment": "",
+          "command": "clickAt",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f2e709bc-b9d0-48f7-bb38-96fdbc0fa67a",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4d265ccb-cb4a-4f33-8ca0-137c1bc1f575",
+          "comment": "",
+          "command": "debugger",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5920a150-7fac-4423-930b-74bb7a2694bf",
+          "comment": "",
+          "command": "do",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5302d2fd-3ba1-4b2e-bb2f-2d663fd2f905",
+          "comment": "",
+          "command": "doubleClick",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "052a42f8-9b39-4f7b-8dc3-e78467d455d0",
+          "comment": "",
+          "command": "doubleClickAt",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0fd2b109-8df0-4263-8678-d7bbea98604c",
+          "comment": "",
+          "command": "dragAndDropToObject",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4ad14048-55d8-47a0-9764-062ce5b0107c",
+          "comment": "",
+          "command": "echo",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ce00cb0b-f3ab-434b-823c-7c6b7ad54d2a",
+          "comment": "",
+          "command": "editContent",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "109c6ad6-9491-43d2-abbb-33db24810d22",
+          "comment": "",
+          "command": "else",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "9a88dea1-4ff6-464d-8114-ad9d721119f2",
+          "comment": "",
+          "command": "elseIf",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a69caaaa-fc05-4504-85c4-37d0f2097325",
+          "comment": "",
+          "command": "end",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d8d3b31e-5b89-4271-a308-43a3366ac711",
+          "comment": "",
+          "command": "executeScript",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4d472b51-097b-45cc-8a7e-4b4e1027f205",
+          "comment": "",
+          "command": "executeAsyncScript",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ecd512eb-6e66-4fee-8ef7-ac7904c8d44a",
+          "comment": "",
+          "command": "forEach",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "cc50ea88-2298-4bc2-9e98-8b7bca625911",
+          "comment": "",
+          "command": "if",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "569e93b7-531e-47de-8ea2-cc9c7eec2184",
+          "comment": "",
+          "command": "mouseDown",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7c0fc169-30ed-4d1b-931e-09da9bd7a51f",
+          "comment": "",
+          "command": "mouseDownAt",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8d99466e-64ca-4526-8734-64b2b5883617",
+          "comment": "",
+          "command": "mouseMoveAt",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "851866dc-9292-43fb-8301-22c191df1dde",
+          "comment": "",
+          "command": "mouseOut",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2fa77e1a-8a55-42f7-a987-13fd3e9f87a2",
+          "comment": "",
+          "command": "mouseOver",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e8db0ebe-4205-4add-8740-e607f67ad4de",
+          "comment": "",
+          "command": "mouseUp",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e4a920ac-8152-451c-81e7-9cb502120c6c",
+          "comment": "",
+          "command": "mouseUpAt",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e17b2b1e-5d22-46db-a31e-de1ac7ffd546",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4e13c554-d2fc-466b-abfc-924b4704ac6d",
+          "comment": "",
+          "command": "pause",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6d768ea4-63bf-4c86-b348-00c30413037f",
+          "comment": "",
+          "command": "removeSelection",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5bc5d945-c071-414b-815f-651b10cfa90c",
+          "comment": "",
+          "command": "repeatIf",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d0e4bc7b-3452-452f-8310-96d17bf72ff2",
+          "comment": "",
+          "command": "run",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "aad7dbb1-843b-4026-a284-258dd4ab90bc",
+          "comment": "",
+          "command": "runScript",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ff266fde-ab9e-44f0-be1b-c65a4d3b7ecc",
+          "comment": "",
+          "command": "select",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b0a1066f-2312-4281-bd37-6257f922ce26",
+          "comment": "",
+          "command": "selectFrame",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "63d6eda1-234c-470f-bc95-4da402fc4b24",
+          "comment": "",
+          "command": "selectWindow",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "635e230d-eb00-42d2-806f-aca9669a8f7e",
+          "comment": "",
+          "command": "sendKeys",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8aefb92d-592b-41c3-ab9e-69c92a78ad8b",
+          "comment": "",
+          "command": "setSpeed",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7a7fe03b-71c0-44b2-96f6-f1f7b4129822",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7a41da2c-404c-4d86-a217-a08498877c67",
+          "comment": "",
+          "command": "store",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7b2065c4-df2a-4baa-8224-92cfdf1501cc",
+          "comment": "",
+          "command": "storeAttribute",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a82f8191-0103-4f88-b7ce-e90fa04f75b9",
+          "comment": "",
+          "command": "storeJson",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ce1cfe71-bea9-492e-bec6-02fe97df43bb",
+          "comment": "",
+          "command": "storeText",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "57418aaa-dc6d-4c38-b0f5-3ee8fb1f580d",
+          "comment": "",
+          "command": "storeTitle",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "88316f96-c8a4-49da-86e2-0931ed8c61b3",
+          "comment": "",
+          "command": "storeValue",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a2dd0ea2-fd0c-4710-b81a-dcd2554317a8",
+          "comment": "",
+          "command": "storeWindowHandle",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "9ebe768d-4649-42c9-b9cb-a9a606f19d9f",
+          "comment": "",
+          "command": "storeXpathCount",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8d742d20-6d0d-4ab3-9d9c-45029793b8e9",
+          "comment": "",
+          "command": "submit",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a4af99a7-3c80-4704-a4c5-d4637483952a",
+          "comment": "",
+          "command": "times",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4e73613a-a1d0-4c52-9ee5-e2d9e155d0b6",
+          "comment": "",
+          "command": "type",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a5c13a62-757a-4e66-88f9-73f389f32fed",
+          "comment": "",
+          "command": "uncheck",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6042b084-63d1-458a-9651-b130f0cb8b74",
+          "comment": "",
+          "command": "verify",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "984d9519-6cd2-4d9b-81cd-2677614ae709",
+          "comment": "",
+          "command": "verifyChecked",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "85f153da-5aaf-4fe3-b2a2-b64f04750632",
+          "comment": "",
+          "command": "verifyEditable",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a855123c-8a48-44bc-8236-8510474835f0",
+          "comment": "",
+          "command": "verifyElementPresent",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "552f142d-bc38-4d0b-844f-fc393332247c",
+          "comment": "",
+          "command": "verifyElementNotPresent",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "9c1dc2bc-60af-43c4-a4a0-c3092ab29c31",
+          "comment": "",
+          "command": "verifyNotChecked",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e2068572-4f11-4d22-b1f3-826b5d31ae0c",
+          "comment": "",
+          "command": "verifyNotEditable",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "df90ad5f-e38a-4c16-94ab-b6328f460b5b",
+          "comment": "",
+          "command": "verifyNotSelectedValue",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ec3a6b79-e896-4698-9dee-3408e333267d",
+          "comment": "",
+          "command": "verifyText",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e877a3b3-67b8-4041-8dde-eb013e1eda83",
+          "comment": "",
+          "command": "verifyTitle",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f48ba276-cf24-4062-8bcd-9b035bae6a34",
+          "comment": "",
+          "command": "verifyValue",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3d535e3e-998d-454f-b990-eaa3b6e2a529",
+          "comment": "",
+          "command": "waitForElementEditable",
+          "target": "",
+          "targets": [],
+          "value": "30000"
+        },
+        {
+          "id": "b3e5a791-7f78-4b9a-99d7-f361b59d4ded",
+          "comment": "",
+          "command": "waitForElementNotEditable",
+          "target": "",
+          "targets": [],
+          "value": "30000"
+        },
+        {
+          "id": "47b24917-482a-4fda-b137-1235a3fcfda9",
+          "comment": "",
+          "command": "waitForElementNotPresent",
+          "target": "",
+          "targets": [],
+          "value": "30000"
+        },
+        {
+          "id": "b936a146-08e4-4e19-a6d7-479553dda5ef",
+          "comment": "",
+          "command": "waitForElementNotVisible",
+          "target": "",
+          "targets": [],
+          "value": "30000"
+        },
+        {
+          "id": "85cae85c-5beb-4744-b298-62248dc73509",
+          "comment": "",
+          "command": "waitForText",
+          "target": "",
+          "targets": [],
+          "value": "30000"
+        },
+        {
+          "id": "5743ca8b-0e34-45e4-a326-c339cb712437",
+          "comment": "",
+          "command": "webdriverAnswerOnVisiblePrompt",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "28a445b5-3d7d-4150-86d9-71a36b8db4d1",
+          "comment": "",
+          "command": "webdriverChooseCancelOnVisibleConfirmation",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e58488a4-0242-40e2-9683-cc7065e00670",
+          "comment": "",
+          "command": "webdriverChooseCancelOnVisiblePrompt",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ca08d3fe-af23-404c-92f1-8bd4c02a713b",
+          "comment": "",
+          "command": "webdriverChooseOkOnVisibleConfirmation",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b539d82c-2ddc-48a5-b9ad-24a1e675922e",
+          "comment": "",
+          "command": "while",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "c732d1d2-73a1-49e1-b42a-fbde5017dd22",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [ "d99cbdb0-94e8-4fa0-a409-e7c6ffbf479f" ]
+    }
+  ],
+  "urls": [ "https://www.google.es/" ],
+  "plugins": []
+}

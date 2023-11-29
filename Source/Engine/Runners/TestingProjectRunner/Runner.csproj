@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Adapters\Selenium\Helpers\Helpers.csproj" />
+    <ProjectReference Include="..\..\Objects\Implementations\Command\Command.csproj" />
+    <ProjectReference Include="..\..\Objects\Implementations\Suite\Suite.csproj" />
+    <ProjectReference Include="..\..\Objects\Implementations\TestingProject\TestingProject.csproj" />
+    <ProjectReference Include="..\..\Objects\Implementations\Test\Test.csproj" />
+  </ItemGroup>
+
+</Project>

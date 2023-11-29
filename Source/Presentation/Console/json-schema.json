@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "$id": "appsettings.json-schema",
+  "title": "JSON Schema para appsettings.",
+  "description": "Esquema que define la configuración para el proyecto de test del frontal del SIT.",
+
+  "type": "object",
+  "required": [
+    "Url"
+  ],
+  "properties": {
+    "Url": {
+      "type": "string",
+      "title": "Url del web",
+      "description": "Url de la página web a probar. No se puede especificar más de una.",
+      "format": "uri",
+      "default": "https://myweb.com:myport",
+      "uniqueItems": true
+    },
+    "MostrarBuscador": {
+      "type": "boolean",
+      "title": "Mostrar Buscador ¿?",
+      "description": "Acepta true/false. Anuncia si se quiere mostrar el buscador predeterminado al lanzar las pruebas. RECOMENDABLE true si se está depurando los pasos de selenium.",
+      "default": false,
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "Buscador": {
+      "type": "string",
+      "title": "Buscador a usar.",
+      "description": "Selecciona que buscador se va a usar para las pruebas de Selenium.",
+      "default": "chrome",
+      "enum": [ "chrome", "firefox", "edge", "internet-explorer", "gc", "ff", "me", "ie" ],
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "SeleniumTestsUrl": {
+      "type": [ "array", "string" ],
+      "title": "Situación de los tests.",
+      "description": "Url a la(s) carpeta(s) dónde se encuentran los tests exportados por Selenium.",
+      "default": "./",
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "StepsPerSeconds": {
+      "type": "integer",
+      "title": "Velocidad de ejecución.",
+      "description": "Número de pasos cada segundo. 0 es instantáneo",
+      "default": 0,
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}
